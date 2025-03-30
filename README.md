@@ -37,6 +37,7 @@ This repository contains the implementation and analysis for two tasks:
 ## ⚙️ Installation
 1. Clone the repository:  
    ```bash
+   https://github.com/microsoft/UniSpeech.git
    git clone https://github.com/Ankit-llTJ/Speech-Understanding-PA2.git
 2. Install dependencies:
    ```bash
