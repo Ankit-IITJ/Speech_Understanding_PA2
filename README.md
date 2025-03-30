@@ -45,4 +45,4 @@ This repository contains the implementation and analysis for two tasks:
    sudo apt-get install python3.10 python3.10-dev python3.10-venv -y
    python3.10 -m venv venv
    source venv/bin/activate
-   pip install torch librosa scikit-learn speechbrain pandas matplotlib torchaudio s3prl fairseq tqdm soundfile ipykernel tensorboardX ffmpeg
+   pip install notebook librosa scikit-learn speechbrain pandas matplotlib s3prl fairseq tqdm soundfile ipykernel tensorboardX ffmpeg torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
