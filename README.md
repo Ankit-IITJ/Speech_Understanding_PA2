@@ -77,3 +77,36 @@ python verification.py \
 - Perform a statistical analysis (e.g., compute the mean and variance of MFCC coefficients)
 - Train Language Classifier (Random forest classifier)
 - Classify Audio and show confusion matrix
+
+## 📊 Results Highlights
+
+### 🎙️ Speech Enhancement
+- **✅ Improvement**:  
+  - Rank-1 accuracy **increased by 17.55%** (from 42.45% → 60%) using the integrated pipeline combining separation and identification.  
+- **⚠️ Challenges**:  
+  - Limited gains from LoRA fine-tuning due to **1-epoch training constraint** (no change in EER/TAR metrics).  
+
+### 🗣️ Language Classification
+- **✅ Performance**:  
+  - **95% overall accuracy** using MFCC features and a Random Forest classifier.  
+- **🔍 Observations**:  
+  - Minor misclassifications between **Marathi ↔ Hindi** (see confusion matrix below), likely due to overlapping phonetic features.  
+
+## 📝 Future Work
+
+- **Improve Fine-Tuning**:  
+  Increase LoRA rank or training epochs to enhance model adaptation capabilities.
+
+- **Integrated Training**:  
+  Incorporate speaker identification loss (e.g., ArcFace) directly into speech separation training for better alignment of objectives.
+
+- **Robust MFCC Classification**:  
+  Develop strategies to mitigate the impact of regional accents and background noise on MFCC-based language classification.
+
+---
+
+## 🔗 References
+
+- [Librosa Documentation](https://librosa.org/doc/latest/)  
+- [SepFormer Models](https://huggingface.co/speechbrain/sepformer-whamr)  
+- [Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)  
