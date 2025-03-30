@@ -37,7 +37,7 @@ This repository contains the implementation and analysis for two tasks:
 ## ⚙️ Installation
 1. Clone the repository:  
    ```bash
-   https://github.com/microsoft/UniSpeech.git
+   git clone https://github.com/microsoft/UniSpeech.git
    git clone https://github.com/Ankit-llTJ/Speech-Understanding-PA2.git
 2. Install dependencies:
    ```bash
@@ -47,3 +47,16 @@ This repository contains the implementation and analysis for two tasks:
    python3.10 -m venv venv
    source venv/bin/activate
    pip install notebook librosa scikit-learn speechbrain pandas matplotlib s3prl fairseq tqdm soundfile ipykernel tensorboardX ffmpeg torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+## 🚀 Usage
+
+### 1. Speech Enhancement
+
+#### Speaker Verification
+```bash
+# Compare two audio files using HuBERT-Large
+python verification.py \
+  --model_name Hubert_large \
+  --wav1 /path/to/audio1.wav \
+  --wav2 /path/to/audio2.wav \
+  --checkpoint /path/to/HuBERT_Large_SV_fixed.th
