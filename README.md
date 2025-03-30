@@ -61,10 +61,18 @@ python verification.py \
   --wav2 /path/to/audio2.wav \
   --checkpoint /path/to/HuBERT_Large_SV_fixed.th
 ```
-### 2. Run Question-1.ipynb for below functionalities
+#### Run Question-1.ipynb for below functionalities
 - Fine tuning speaker verification model using LoRA (Low-Rank Adaptation) and ArcFace loss
 - Create a multi-speaker scenario dataset by mixing/overlapping utterances from 2 different speakers of the VoxCeleb2 dataset 
 - Use the pre-trained SepFormer model (speechbrain/sepformer-whamr) to perform speaker separation
 - Audio enhamcement using sepformer model (speechbrain/sepformer-wham-enhancement)
 - Speaker identification using pre-trained and finetuned speaker identification HuBert-large model on enhanced audio
 - A novel pipeline/algorithmic approach to combine the speaker identification model along with the SepFromer model to perform speaker separation with the speaker identification model and speech enhancement with the SepFormer model
+
+### 2. MFCC Analysis & Classification
+### Run Question-2.ipynb for belwo fucntionalities
+- Extract MFCC Features and visualize MFCC spectrograms for a representative set of samples from at least 3 languages (Marathi,Punjabi,Hindi) of your choice.
+- Compare the MFCC spectrograms across the different languages
+- Perform a statistical analysis (e.g., compute the mean and variance of MFCC coefficients)
+- Train Language Classifier (Random forest classifier)
+- Classify Audio and show confusion matrix
