@@ -70,7 +70,8 @@ python verification.py \
 - A novel pipeline/algorithmic approach to combine the speaker identification model along with the SepFromer model to perform speaker separation with the speaker identification model and speech enhancement with the SepFormer model
 
 ### 2. MFCC Analysis & Classification
-### Run Question-2.ipynb for belwo fucntionalities
+
+#### Run Question-2.ipynb for belwo functionalities
 - Extract MFCC Features and visualize MFCC spectrograms for a representative set of samples from at least 3 languages (Marathi,Punjabi,Hindi) of your choice.
 - Compare the MFCC spectrograms across the different languages
 - Perform a statistical analysis (e.g., compute the mean and variance of MFCC coefficients)
