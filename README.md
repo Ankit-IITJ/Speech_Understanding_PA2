@@ -38,3 +38,11 @@ This repository contains the implementation and analysis for two tasks:
 1. Clone the repository:  
    ```bash
    git clone https://github.com/Ankit-llTJ/Speech-Understanding-PA2.git
+2. Install dependencies:
+   ```bash
+   sudo add-apt-repository ppa:deadsnakes/ppa -y
+   sudo apt-get update -y
+   sudo apt-get install python3.10 python3.10-dev python3.10-venv -y
+   python3.10 -m venv venv
+   source venv/bin/activate
+   pip install torch librosa scikit-learn speechbrain pandas matplotlib torchaudio s3prl fairseq tqdm soundfile ipykernel tensorboardX ffmpeg
